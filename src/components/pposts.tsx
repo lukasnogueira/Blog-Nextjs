@@ -1,9 +1,9 @@
 import { useBlog } from "../app/contexts/Blog";
 
-const { posts, like } = useBlog()
 
 const Pposts = () => {
-
+    const { posts, like } = useBlog()
+    
     return(
         <>        
         {posts.map(post => (

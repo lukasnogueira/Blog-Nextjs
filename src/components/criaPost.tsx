@@ -1,11 +1,11 @@
 import { useState } from "react"
 import { useBlog } from "../app/contexts/Blog";
 
-const [menssager, setMenssager] = useState('')
-const { createPost } = useBlog()
 
 const CriaPost = () => {
-
+    
+    const [menssager, setMenssager] = useState('')
+    const { createPost } = useBlog()
 
     return (
         <>
@@ -13,7 +13,6 @@ const CriaPost = () => {
         <button onClick={() => createPost({ menssager })}>Criar Post</button>
         </>
     )
-
 }
 
 export {CriaPost}
